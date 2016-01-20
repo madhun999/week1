@@ -37,19 +37,23 @@
                 <ul>
                   <li>
                     <label id="f-name-label">First Name</label>
-                    <input id="first-name" name="first-name" type="text" placeholder="First name" title="Enter your first name here" required />
+                    <input id="first-name" name="first-name" type="text" size="30" placeholder="First name" title="Enter your first name here" required />
                   </li>
                   <li>
                     <label id="l-name-label">Last Name</label>
-                    <input id="last-name" name="last-name" type="text" placeholder="Last name" title="Enter your last name here" required />
+                    <input id="last-name" name="last-name" type="text" size="30" placeholder="Last name" title="Enter your last name here" required />
                   </li>
                   <li>
                     <label id="email-label">Email</label>
-                    <input id="email" name="email" type="email" placeholder="email" title="Enter a valid email address here" required />
+                    <input id="email" name="email" type="email" size="50" placeholder="email" title="Enter a valid email address here" required />
+                  </li>
+                  <li>
+                    <label id="phone-label">Telephone</label>
+                    <input id="phone" name="phone" type="tel" placeholder="Telephone" title="Enter an optional telephone number here" />
                   </li>
                   <li>
                     <label id="address-label">Street Address In Front Of</label>
-                    <input id="address" name="address" type="text" placeholder="Address" title="Enter the address the pothole is in front of" required
+                    <input id="address" name="address" type="text" placeholder="Address" size="40" title="Enter the address the pothole is in front of" required
                        pattern="\d{1,5}-?[a-zA-Z]?\s+[ a-zA-Z0-9]{1,50}" />
                   </li>
                   <li>
@@ -70,7 +74,7 @@
                   </li>
                   <li>
                     <label id="comments-label">Optional Comments</label>
-                    <input id="comments" name="comments" type="text" placeholder="Comments" title="Enter an optional comment here" />
+                    <input id="comments" name="comments" type="text" size="50" placeholder="Comments" title="Enter an optional comment here" />
                   </li>
                 </ul>
                 <input type="submit">
