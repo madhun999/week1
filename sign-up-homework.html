@@ -38,42 +38,50 @@
                   <li>
                     <label id="f-name-label">First Name</label>
                     <input id="first-name" name="first-name" type="text" size="30" placeholder="First name" title="Enter your first name here" required />
+                    *
                   </li>
                   <li>
                     <label id="l-name-label">Last Name</label>
                     <input id="last-name" name="last-name" type="text" size="30" placeholder="Last name" title="Enter your last name here" required />
+                    *
                   </li>
                   <li>
                     <label id="email-label">Email</label>
-                    <input id="email" name="email" type="email" size="50" placeholder="email" title="Enter a valid email address here" required />
+                    <input id="email" name="email" type="email" size="50" placeholder="foo@bar.com" title="Enter a valid email address here" required />
+                    *
                   </li>
                   <li>
                     <label id="phone-label">Telephone</label>
-                    <input id="phone" name="phone" type="tel" placeholder="Telephone" title="Enter an optional telephone number here" />
+                    <input id="phone" name="phone" type="tel" placeholder="123-456-7890" title="Enter an optional telephone number here" />
                   </li>
                   <li>
                     <label id="address-label">Street Address In Front Of</label>
-                    <input id="address" name="address" type="text" placeholder="Address" size="40" title="Enter the address the pothole is in front of" required
+                    <input id="address" name="address" type="text" placeholder="123 Foo Street" size="40" title="Enter the address the pothole is in front of, such as 123 Foo Street NE" required
                        pattern="\d{1,5}-?[a-zA-Z]?\s+[ a-zA-Z0-9]{1,50}" />
+                    *
                   </li>
                   <li>
                     <label id="size-label">Size of Pothole (in feet)</label>
-                    <input id="size" name="size" type="number" min="1" max="50" step="1" value="1" placeholder="Pothole size" title="Enter the pothole size in feet here" required />
+                    <input id="size" name="size" type="number" min="1" max="50" step="1" value="1" placeholder="1" title="Enter the pothole size in feet here" required />
+                    *
                   </li>
                   <li>
                     <label id="crows-label">Number of Crows drinking out of Pothole</label>
-                    <input id="crows" name="crows" type="number" min="0" max="100" step="1" value="0" placeholder="Number of crows" title="Number of crows drinking out of pothole" required />
+                    <input id="crows" name="crows" type="number" min="0" max="100" step="1" value="0" placeholder="0" title="Number of crows drinking out of pothole" required />
+                    *
                   </li>
                   <li>
                     <label>Did you vote for our last tax increase?</label>
                     <select name="tax">
+                      <option value="" selected>Choose one</option>
                       <option value="Yes">Yes</option>
                       <option value="No">No</option>
                       <option value="Not telling">Not telling</option>
                     </select>
+                    *
                   </li>
                   <li>
-                    <label id="comments-label">Optional Comments</label>
+                    <label id="comments-label">Comments</label>
                     <input id="comments" name="comments" type="text" size="50" placeholder="Comments" title="Enter an optional comment here" />
                   </li>
                 </ul>
